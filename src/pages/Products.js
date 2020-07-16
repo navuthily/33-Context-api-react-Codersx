@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {  Card, Button, Row, Col} from 'react-bootstrap';
 import axios from 'axios';
+import {CartContext} from '../contexts/Cart'
 export default class Products extends Component {
   constructor(props) {
     super(props);
@@ -36,7 +37,9 @@ export default class Products extends Component {
   <Card.Text>
    {product.description}
   </Card.Text>
-  <Button variant="primary">Add to cart </Button>
+  <CartContext.Consumer>
+{({addToCart})=>  <Button onClick ={()=>addToCart(product)} variant="primary">Add to cart </Button>}
+  </CartContext.Consumer>
 </Card.Body>
 </Card> 
 </Col-4>

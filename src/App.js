@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Topmenu from './components/Topmenu'
 import Products from './pages/Products'
+import CartProvider  from './contexts/Cart'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {
   BrowserRouter as Router,
@@ -16,6 +17,7 @@ const Users =() => <p>User Na na kute</p>;
 const About =() => <p>About Na na kute</p>;
 function App() {
   return (
+    <CartProvider>
     <Router>
     <div className='App'>
       <Topmenu/>
@@ -25,6 +27,7 @@ function App() {
    
     </div>
   </Router>
+  </CartProvider>
   );
 }
 
