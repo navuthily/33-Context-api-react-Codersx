@@ -11,6 +11,7 @@ export default class Topmenu extends Component {
     <Nav className="mr-auto">
       <Nav.Link href="/">Home</Nav.Link>
       <Nav.Link href="/products">Products</Nav.Link>
+      <Nav.Link href="/add">Add</Nav.Link>
      <CartContext.Consumer>
         {({cartItems})=>( 
         <Nav.Link href="/products">Cart({cartItems.length})</Nav.Link>
