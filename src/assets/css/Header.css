@@ -1,0 +1,23 @@
+
+.logo-codersx{
+
+font-size: 4px;
+width: 150px;
+};
+
+.navbar1{
+  color:#627182;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+.nav-li{
+margin-left: auto;
+border-bottom:solid 1px #627182 !important ;
+
+}
+
+.button{
+  background-color:#4A90E2 ;
+  border: transparent;
+  
+}
